@@ -1,0 +1,59 @@
+@import url('./styles/global.css');
+@import url('./styles/layout.css');
+@import url('./styles/assets.css');
+@import url('./styles/header.css');
+
+/* =========================
+   p tag style for notes
+========================= */
+.note{
+    max-width: 300px;
+    background-color: lightgray;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* =========================
+   button and input style
+========================= */
+.input-button{
+  display: flex;
+  justify-content:flex-start;
+  margin-left: 15px;
+  margin-top: 50px;
+  border-radius: 10px;
+}
+
+input{
+    margin-right: 10px;
+}
+
+.delete{
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+#trash_content{
+   padding-top: 20px;
+}
+
+.trash{
+    background-color: rgb(160, 76, 76);
+     max-width: 300px;
+     margin: 10px;
+     border-radius: 10px;
+     padding-bottom: 20px;
+     
+}
+
+h2{
+    text-align: center;
+    padding-top: 10px;
+}

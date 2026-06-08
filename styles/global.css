@@ -11,3 +11,17 @@ globale styles
 a{
     text-decoration: none;
 }
+
+:root {
+  /* colors */
+  --color-background-top: #0c3240;
+  --color-background-second: #103e4f;
+  --color-text: whitesmoke;
+  --color-divider: rgb(172, 171, 224);
+
+  /* fonts */
+  --font-primary: "Raleway", sans-serif;
+}
+
+
+

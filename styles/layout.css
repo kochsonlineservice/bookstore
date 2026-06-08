@@ -1,0 +1,48 @@
+.book_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 20%;
+    border: 1px solid black;
+    margin: 20px;
+   
+}
+
+.book_name{
+    background-color: var(--color-background-top);
+    color: black;
+    align-items: center;
+    text-align: center;
+
+    padding: 20px;
+
+    border-bottom: 3px solid rgb(125, 125, 231);
+
+
+
+}
+
+h2{
+    color: whitesmoke;
+}
+
+
+.img {
+    display: flex;
+    justify-content: center; /* horizontal zentrieren */
+    align-items: center;
+
+    padding: 20px;
+
+    background-color:var(--color-background-second);
+
+     border-bottom: 3px solid rgb(125, 125, 231);
+}
+
+
+
+.img_book {
+    width: 100px;
+    height: 140px;
+    object-fit: cover; 
+}

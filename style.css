@@ -6,3 +6,9 @@
 /* =========================
    p tag style for notes
 ========================= */
+body {
+    background-color: #9e1015;
+    font-family: Arial;
+    color: white;
+}
+

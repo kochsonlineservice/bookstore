@@ -16,7 +16,7 @@
 
     padding: 20px;
 
-    border-bottom: 3px solid rgb(125, 125, 231);
+   border-bottom: 3px solid var(--color-border-bottom);
 
 
 
@@ -36,7 +36,7 @@ h2{
 
     background-color:var(--color-background-second);
 
-     border-bottom: 3px solid rgb(125, 125, 231);
+     border-bottom: 3px solid var(--color-border-bottom);
 }
 
 
@@ -45,4 +45,23 @@ h2{
     width: 100px;
     height: 140px;
     object-fit: cover; 
+}
+
+.book_price_like {
+    display: flex;
+    justify-content: space-between;
+
+    background-color: var(--color-background-top);
+
+    padding: 20px;
+    border-bottom: 3px solid var(--color-border-bottom);
+}
+
+
+.book_price{
+    padding-top: 5px;
+    color: red;
+    font-size: 24px;
+
+    
 }

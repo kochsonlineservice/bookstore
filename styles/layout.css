@@ -1,10 +1,26 @@
+header{
+    display: flex;
+    justify-content: center; /* horizontal */
+    align-items: center;     /* vertikal */
+    height: 200px;
+    background-color: var(--color-background-top);
+    margin-bottom: 20px;
+    font-size: 40px;
+    text-align: center;
+  
+   
+}
+
+
 .book_card {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    width: 20%;
-    border: 1px solid black;
-    margin: 20px;
+   
+    width: 50%;
+    margin: 0 auto;
+    border: 1px solid rgb(232, 223, 223);
+     border-radius: 2px;
+    
    
 }
 
@@ -39,8 +55,6 @@ h2{
      border-bottom: 3px solid var(--color-border-bottom);
 }
 
-
-
 .img_book {
     width: 100px;
     height: 140px;
@@ -49,19 +63,37 @@ h2{
 
 .book_price_like {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+     padding: 20px;
 
     background-color: var(--color-background-top);
 
-    padding: 20px;
-    border-bottom: 3px solid var(--color-border-bottom);
+   
 }
-
 
 .book_price{
     padding-top: 5px;
     color: red;
     font-size: 24px;
+}
 
-    
+.book_details{
+    padding: 0px 20px 20px 20px;
+    line-height: 1.4;
+
+     background-color: var(--color-background-top);
+     border-bottom: 3px solid var(--color-border-bottom);
+  
+}
+
+.book_comments{
+    padding: 20px;
+    background-color:var(--color-background-second);
+}
+
+.book_input{
+    padding: 20px;
+    background-color:var(--color-background-second);
+
 }

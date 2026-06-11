@@ -1,17 +1,18 @@
 function getBookTemplate(book) {
+  let commentsHtml = "";
 
-    let commentsHtml = "";
+  for (let index = 0; index < book.comments.length; index++) {
+    let comment = book.comments[index];
 
-    for (let index = 0; index < book.comments.length; index++) {
+    commentsHtml += `
+        <div class="comment">
+            <span class="comment_name">[${comment.name}]</span>
+            <span class="comment_text">: ${comment.comment}</span>
+        </div>
+    `;
+  }
 
-        let comment = book.comments[index];
-
-        commentsHtml += `
-            <p><b>${comment.name}</b>: ${comment.comment}</p>
-        `;
-    }
-
-    return `
+  return `
 
       <article class="book_card">
 
@@ -26,9 +27,9 @@ function getBookTemplate(book) {
           <div class="book_price_like">
               <p class="book_price">${book.price} €</p>
 
-              <div class="book_like">
-                  ${book.likes} ❤️
-              </div>
+                <div class="book_like" onclick="toggleLike(${book.id})">
+                    ${book.likes} ❤️
+                </div>
           </div>
 
           <div class="book_details">
@@ -45,7 +46,23 @@ function getBookTemplate(book) {
                   ${commentsHtml}
               </div>
 
-          </div>
+         </div>
+
+            <div class="book_input">
+                    <input
+                        id="commentInput${book.id}"
+                        type="text"
+                        class="input_field"
+                        >
+
+                    <button
+                     class="btn_input_field"
+                     onclick="addComment(${book.id})"
+                    >
+                    🚀
+                    </button>
+            
+            </div>
 
       </article>
     `;

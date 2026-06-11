@@ -1,3 +1,8 @@
+
+/* =========================
+   HEADER
+========================= */
+
 header{
     display: flex;
     justify-content: center; /* horizontal */
@@ -7,21 +12,20 @@ header{
     margin-bottom: 20px;
     font-size: 40px;
     text-align: center;
-  
-   
 }
 
+/* =========================
+  card-details
+========================= */
 
 .book_card {
     display: flex;
     flex-direction: column;
    
-    width: 50%;
-    margin: 0 auto;
+    width: 30%;
+    margin: 20px auto 0 auto;
     border: 1px solid rgb(232, 223, 223);
      border-radius: 2px;
-    
-   
 }
 
 .book_name{
@@ -29,53 +33,12 @@ header{
     color: black;
     align-items: center;
     text-align: center;
-
     padding: 20px;
-
-   border-bottom: 3px solid var(--color-border-bottom);
-
-
-
+    border-bottom: 3px solid var(--color-border-bottom);
 }
 
 h2{
     color: whitesmoke;
-}
-
-
-.img {
-    display: flex;
-    justify-content: center; /* horizontal zentrieren */
-    align-items: center;
-
-    padding: 20px;
-
-    background-color:var(--color-background-second);
-
-     border-bottom: 3px solid var(--color-border-bottom);
-}
-
-.img_book {
-    width: 100px;
-    height: 140px;
-    object-fit: cover; 
-}
-
-.book_price_like {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-     padding: 20px;
-
-    background-color: var(--color-background-top);
-
-   
-}
-
-.book_price{
-    padding-top: 5px;
-    color: red;
-    font-size: 24px;
 }
 
 .book_details{
@@ -84,16 +47,110 @@ h2{
 
      background-color: var(--color-background-top);
      border-bottom: 3px solid var(--color-border-bottom);
-  
 }
+
+/* =========================
+   book-img
+========================= */
+
+.img {
+    display: flex;
+    justify-content: center; /* horizontal zentrieren */
+    align-items: center;
+    padding: 20px;
+
+    background-color:var(--color-background-second);
+    border-bottom: 3px solid var(--color-border-bottom);
+}
+
+.img_book {
+    width: 100px;
+    height: 140px;
+    object-fit: cover; 
+}
+
+/* =========================
+   book-price
+========================= */
+.book_price_like {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+     padding: 20px;
+
+    background-color: var(--color-background-top);
+}
+
+.book_price{
+    padding-top: 5px;
+    color: red;
+    font-size: 24px;
+}
+
+/* =========================
+  comments
+========================= */
 
 .book_comments{
     padding: 20px;
     background-color:var(--color-background-second);
 }
 
+.comments_container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 1.8;
+}
+
+.comment {
+    display: grid;
+    grid-template-columns: 120px 1fr;
+    gap: 40px;
+    margin-bottom: 8px;
+
+    border-bottom: 1px solid whitesmoke;
+}
+
+.comment:last-child {
+    border-bottom: none;
+}
+
+.comment_name {
+    font-weight: bold;
+}
+
+.comment_text {
+    word-break: break-word;
+}
+
+/* =========================
+  input-field
+========================= */
+
 .book_input{
+     display: flex;
+    
+    align-items: center;
     padding: 20px;
     background-color:var(--color-background-second);
+}
 
+.input_field {
+    width: 80%;
+}
+
+.btn_input_field {
+    cursor: pointer;
+}
+
+/* =========================
+  likes-liked ++
+========================= */
+.book_like {
+    cursor: pointer;
+}
+
+.book_like:hover {
+    transform: scale(1.1);
 }
